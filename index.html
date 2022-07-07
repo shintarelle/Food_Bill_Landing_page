@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="./css/style.css">
+
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -32,200 +34,217 @@
 
 <body>
     <header>
-        <div>
-            <a href="#home"><img src="./image/logo.png" alt="Food Bill. Enjoy good food." width="162" height="45"></a>
+        <div class="container">
+            <div class="logo">
+                <a href="#home"><img src="./image/logo.png" alt="Food Bill. Enjoy good food." width="162" height="45"></a>
+            </div>
+            <nav class="header__navigation">
+                <ul class="header__menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#how-to-work">How to work</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="header__button btn1" type="button">Register</button>
         </div>
-        <nav>
-            <ul>
-                <li class="menu"><a href="#home">Home</a></li>
-                <li class="menu"><a href="#how_to_work">How to work</a></li>
-                <li class="menu"><a href="#services">Services</a></li>
-                <li class="menu"><a href="#product">Product</a></li>
-                <li class="menu"><a href="#testimonials">Testimonials</a></li>
-                <li class="menu"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button type="button">Register</button>
     </header>
+
     <main>
         <section id="home">
-            <div>
-                <h1>You Can Eat Any Tasty Food You Like.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                <button type="button">Get Started</button>
-                <ul>
-                    <li>
-                        <a href="http://facebook.com">
-                            <img src="./image/icon/facebook.svg" alt="facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://instagram.com">
-                            <img src="./image/icon/instagram.svg" alt="instagram">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://twitter.com">
-                            <img src="./image/icon/twitter.svg" alt="twitter">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://linkedIn.com">
-                            <img src="./image/icon/linkedin.svg" alt="LinkedIn">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <div>
-                    <a href="#"><img src="./image/icon/time.svg" alt="working hours"></a>
-                    <h5>Today 10:00am - 09:00pm</h5>
-                    <p>Working Time</p>
+            <div class="container_other">
+                <div class="offer">
+                    <h1>You Can Eat Any Tasty Food You Like.</h1>
+                    <p class="offer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    <button class="offer__button btn2" type="button"><span>Get Started</span></button>
+                    <ul class="offer__social-network">
+                        <li>
+                            <a class="offer__link facebook" href="http://facebook.com"></a>
+                        </li>
+                        <li>
+                            <a class="offer__link instagram" href="http://instagram.com"></a>
+                        </li>
+                        <li>
+                            <a class="offer__link twitter" href="http://twitter.com"></a>
+                        </li>
+                        <li>
+                            <a class="offer__link linkedin" href="http://linkedIn.com"></a>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <a href="#"><img src="./image/icon/location.svg" alt="location"></a>
-                    <h5>Washington, D.C., DC, USA</h5>
-                    <p>Our Location</p>
-                </div>
-                <div>
-                    <a href="#"><img src="./image/icon/call.svg" alt="telephone number"></a>
-                    <a href="tel:+17602781253"><h5>+17602781253</h5></a>
-                    <p>Call Online</p>
+                <div class="offer__contact">
+                    <div class="contact__info">
+                        <div class="info__card">
+                            <div class="info__image"><img src="./image/icon/time.svg" alt="working hours"></div>
+                            <h5>Today 10:00am - 09:00pm</h5>
+                            <p class="info__text">Working Time</p>
+                        </div>
+                        <div class="info__card">
+                            <div class="info__image"><img src="./image/icon/location.svg" alt="location"></div>
+                            <h5>Washington, D.C., DC, USA</h5>
+                            <p class="info__text">Our Location</p>
+                        </div>
+                        <div class="info__card">
+                            <div class="info__image"><img src="./image/icon/call.svg" alt="telephone number"></div>
+                            <a href="tel:+17602781253"><h5>+17602781253</h5></a>
+                            <p class="info__text">Call Online</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="how_to_work">
-            <div>
+        <section class="howtowork" id="how-to-work">
+            <div class="howtowork__image">
                 <img src="./image/sushi-sashimi.png" alt="sushi_sashimi">
             </div>
-            <div>
-                <p>How to work</p>
-                <h2>Food Is An Important Part Of A Balanced Diet.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <button type="button">Learn more</button>
+            <div class="howtowork__info">
+                <p class="menupoint">How to work</p>
+                <h2 class="howtowork__title">Food Is An Important Part Of A Balanced Diet.</h2>
+                <p class="howtowork__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="howtowork__button btn2" type="button"><span>Learn more</span></button>
             </div>
         </section>
 
-        <section id="services">
-            <p>Services</p>
-            <h2>Why Choose Our Favorite Food</h2>
-            <div>
-                <div>
-                    <a href="#"><img src="./image/icon/qualityfull_food.svg" alt="qualityfull food"></a>
-                    <h3>Qualityfull Food</h3>
-                    <p>But I must explain to you how all this
-                    mistaken idea of denouncing pleasure and praising pain was born.</p>
-                </div>
-                <div>
-                    <a href="#"><img src="./image/icon/healthy_food.svg" alt="healthy food"></a>
-                    <h3>Healthy Food</h3>
-                    <p>But I must explain to you how all this
-                    mistaken idea of denouncing pleasure and praising pain was born.</p>
-                </div>
-                <div>
-                    <a href="#"><img src="./image/icon/fast_delivery.svg" alt="fast delivery"></a>
-                    <h3>Fast Delivery</h3>
-                    <p>But I must explain to you how all this
-                    mistaken idea of denouncing pleasure and praising pain was born.</p>
+        <section class="services" id="services">
+            <div class="services__wrap">
+                <div class="container_other">
+                    <p class="menupoint services__text">Services</p>
+                    <h2 class="services__title">Why Choose Our Favorite Food</h2>
+                    <div class="favorite__food">
+                        <div class="foodcard">
+                            <div class="foodcard__image"><img src="./image/icon/qualityfull_food.svg" alt="qualityfull food"></div>
+                            <h3>Qualityfull Food</h3>
+                            <p class="foodcard__text">But I must explain to you how all this
+                            mistaken idea of denouncing pleasure and praising pain was born.</p>
+                        </div>
+                        <div class="foodcard">
+                            <div class="foodcard__image"><img src="./image/icon/healthy_food.svg" alt="healthy food"></div>
+                            <h3>Healthy Food</h3>
+                            <p class="foodcard__text">But I must explain to you how all this
+                            mistaken idea of denouncing pleasure and praising pain was born.</p>
+                        </div>
+                        <div class="foodcard">
+                            <div class="foodcard__image"><img src="./image/icon/fast_delivery.svg" alt="fast delivery"></div>
+                            <h3>Fast Delivery</h3>
+                            <p class="foodcard__text">But I must explain to you how all this
+                            mistaken idea of denouncing pleasure and praising pain was born.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="product">
-            <p>Product</p>
-            <h2>Most Popular Items</h2>
-            <div>
-                <div class="item">
-                    <img src="./image/Gyro_Sandwhich.png" alt="Gyro Sandwhich">
-                    <div>
-                        <div>
-                            <h4>Gyro Sandwhich</h4>
-                            <button type="button">Add To Card</button>
+            <div class="product__wrap">
+                <div class="container_other">
+                    <p class="menupoint">Product</p>
+                    <h2>Most Popular Items</h2>
+                    <div class="product__items">
+                        <div class="itemCard">
+                            <img src="./image/Gyro_Sandwhich.png" alt="Gyro Sandwhich">
+                            <div class="itemCard__info">
+                                <div class="itemCard__name">
+                                    <h4 class="itemCard__title">Gyro Sandwhich</h4>
+                                    <button class="itemCard__button btn1" type="button">Add To Card</button>
+                                </div>
+                                <div class="itemCard__price">
+                                    <div class="price__rating">
+                                        <img class="rating__img" src="./image/icon/star.svg" alt="Star">
+                                        <span class="rating__value">4.7</span>
+                                    </div>
+                                    <p class="price">$350</p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <img src="./image/icon/star.svg" alt="Star">
-                            <span>4.7</span>
-                            <p>$350</p>
+                        <div class="itemCard">
+                            <img src="./image/Enchilada.png" alt="Enchilada">
+                            <div class="itemCard__info">
+                                <div class="itemCard__name">
+                                    <h4 class="itemCard__title">Enchilada</h4>
+                                    <button class="itemCard__button btn1" type="button">Add To Card</button>
+                                </div>
+                                <div class="itemCard__price">
+                                    <div class="price__rating">
+                                        <img class="rating__img" src="./image/icon/star.svg" alt="Star">
+                                        <span class="rating__value">4.7</span>
+                                    </div>
+                                    <p class="price">$390</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemCard">
+                            <img src="./image/Green_Beans.png" alt="Green Beans">
+                            <div class="itemCard__info">
+                                <div class="itemCard__name">
+                                    <h4 class="itemCard__title">Green Beans</h4>
+                                    <button class="itemCard__button btn1" type="button">Add To Card</button>
+                                </div>
+                                <div class="itemCard__price">
+                                    <div class="price__rating">
+                                        <img class="rating__img" src="./image/icon/star.svg" alt="Star">
+                                        <span class="rating__value">4.7</span>
+                                    </div>
+                                    <p class="price">$230</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemCard">
+                            <img src="./image/Pizza.png" alt="Pizza">
+                            <div class="itemCard__info">
+                                <div class="itemCard__name">
+                                    <h4 class="itemCard__title">Pizza</h4>
+                                    <button class="itemCard__button btn1" type="button">Add To Card</button>
+                                </div>
+                                <div class="itemCard__price">
+                                    <div class="price__rating">
+                                        <img class="rating__img" src="./image/icon/star.svg" alt="Star">
+                                        <span class="rating__value">4.7</span>
+                                    </div>
+                                    <p class="price">$150</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemCard">
+                            <img src="./image/Chiken_Pot_Pie.png" alt="Chiken Pot Pie">
+                            <div class="itemCard__info">
+                                <div class="itemCard__name">
+                                    <h4 class="itemCard__title">Chicken Pot Pie</h4>
+                                    <button class="itemCard__button btn1" type="button">Add To Card</button>
+                                </div>
+                                <div class="itemCard__price">
+                                    <div class="price__rating">
+                                        <img class="rating__img" src="./image/icon/star.svg" alt="Star">
+                                        <span class="rating__value">4.7</span>
+                                    </div>
+                                    <p class="price">$260</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemCard">
+                            <img src="./image/Green_Salad.png" alt="Green Salad">
+                            <div class="itemCard__info">
+                                <div class="itemCard__name">
+                                    <h4 class="itemCard__title">Green Salad</h4>
+                                    <button class="itemCard__button btn1" type="button">Add To Card</button>
+                                </div>
+                                <div class="itemCard__price">
+                                    <div class="price__rating">
+                                        <img class="rating__img" src="./image/icon/star.svg" alt="Star">
+                                        <span class="rating__value">4.7</span>
+                                    </div>
+                                    <p class="price">$100</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <img src="./image/Enchilada.png" alt="Enchilada">
-                    <div>
-                        <div>
-                            <h4>Enchilada</h4>
-                            <button type="button">Add To Card</button>
-                        </div>
-                        <div>
-                            <img src="./image/icon/star.svg" alt="Star">
-                            <span>4.7</span>
-                            <p>$390</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="./image/Green_Beans.png" alt="Green Beans">
-                    <div>
-                        <div>
-                            <h4>Green Beans</h4>
-                            <button type="button">Add To Card</button>
-                        </div>
-                        <div>
-                            <img src="./image/icon/star.svg" alt="Star">
-                            <span>4.7</span>
-                            <p>$230</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="./image/Pizza.png" alt="Pizza">
-                    <div>
-                        <div>
-                            <h4>Pizza</h4>
-                            <button type="button">Add To Card</button>
-                        </div>
-                        <div>
-                            <img src="./image/icon/star.svg" alt="Star">
-                            <span>4.7</span>
-                            <p>$150</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="./image/Chiken_Pot_Pie.png" alt="Chiken Pot Pie">
-                    <div>
-                        <div>
-                            <h4>Chiken Pot Pie</h4>
-                            <button type="button">Add To Card</button>
-                        </div>
-                        <div>
-                            <img src="./image/icon/star.svg" alt="Star">
-                            <span>4.7</span>
-                            <p>$260</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="./image/Green_Salad.png" alt="Green Salad">
-                    <div>
-                        <div>
-                            <h4>Green Salad</h4>
-                            <button type="button">Add To Card</button>
-                        </div>
-                        <div>
-                            <img src="./image/icon/star.svg" alt="Star">
-                            <span>4.7</span>
-                            <p>$100</p>
-                        </div>
-                    </div>
+                    <button class="product__button btn2" type="button"><span>See More product</span></button>
                 </div>
             </div>
-            <button type="button">See More product</button>
         </section>
 
     </main>

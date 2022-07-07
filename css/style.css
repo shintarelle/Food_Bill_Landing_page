@@ -1,0 +1,547 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*--------------------*/
+
+@font-face {
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Product Sans"),
+        url("../fonts/Product-Sans-Regular.woff2") format("woff2"),
+        url("../fonts/Product-Sans-Regular.woff") format("woff"),
+        url("../fonts/Product-Sans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Product Sans";
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Product Sans"),
+        url("../fonts/Product-Sans-Bold.woff2") format("woff2"),
+        url("../fonts/Product-Sans-Bold.woff") format("woff"),
+        url("../fonts/Product-Sans-Bold.ttf") format("ttf");
+}
+
+body {
+    font-family: "Product Sans";
+    font-size: 16px;
+}
+
+header {
+    height: 105px;
+    padding: 30px 0;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container_other {
+    max-width: 1200px;
+    padding: 0 15px 30px 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    margin-right: 145px;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+.header__navigation {
+    float: left;
+    padding: 14.5px 0;
+}
+
+.header__menu {
+    overflow: hidden;
+}
+
+.header__menu li {
+    float: left;
+}
+
+.header__menu li a {
+    padding: 12px 15px;
+}
+
+.header__menu li a:hover {
+    color: #F16214;
+    text-shadow: 0.5px 0px 1px #F16214;
+}
+
+.header__button {
+    height: 30px;
+    border-radius: 15px;
+    padding: 7px 17px;
+    margin: 7.5px 15px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.btn1 {
+    background-color: #F16214;
+    color: #fff;
+    position: relative;
+}
+
+.btn1:hover {
+    box-shadow: 3px 3px 2px #370000;
+}
+
+.btn1:active {
+    box-shadow: none;
+    top: 3px
+}
+
+/*-------------Offer--------------*/
+
+.offer {
+    max-width: 570px;
+    padding: 110px 0;
+}
+
+h1 {
+    font-size: 75px;
+    line-height: 90.98px;
+    max-width: 490px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+p {
+    color: #888888;
+    line-height: 24px;
+}
+
+.offer__text {
+    margin-bottom: 40px;
+}
+
+.offer__button {
+    margin: 0 0 40px 0;
+}
+
+.btn2 {
+    height: 50px;
+    border-radius: 25px;
+    padding: 5px;
+    background: #F16214 url('../image/icon/arrow.svg') 96% 50% no-repeat;
+    position: relative;
+}
+
+.btn2:hover {
+    box-shadow: 3px 3px 2px #370000;
+}
+
+.btn2:active {
+    box-shadow: none;
+    top: 3px
+}
+
+.btn2 span {
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    padding: 0 60px 0 15px;
+}
+
+.offer__social-network {
+    overflow: hidden;
+}
+
+.offer__social-network li {
+    float: left;
+    margin: 0 23px 0 0;
+}
+
+.offer__social-network li:last-child {
+    margin: 0;
+}
+
+.offer__link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.facebook {
+    background: rgba(241, 98, 20, 0.15) url(../image/icon/facebook.svg) 50% no-repeat;
+}
+
+.facebook:hover {
+    background: rgb(241, 98, 20) url(../image/icon/facebook-white.svg) 50% no-repeat;
+}
+
+.instagram {
+    background: rgba(241, 98, 20, 0.15) url(../image/icon/instagram.svg) 50% no-repeat;
+}
+
+.instagram:hover {
+    background: rgb(241, 98, 20) url(../image/icon/instagram-white.svg) 50% no-repeat;
+}
+
+.twitter {
+    background: rgba(241, 98, 20, 0.15) url(../image/icon/twitter.svg) 50% no-repeat;
+}
+
+.twitter:hover {
+    background: rgb(241, 98, 20) url(../image/icon/twitter-white.svg) 50% no-repeat;
+}
+
+.linkedin {
+    background: rgba(241, 98, 20, 0.15) url(../image/icon/linkedin.svg) 50% no-repeat;
+}
+
+.linkedin:hover {
+    background: rgb(241, 98, 20) url(../image/icon/linkedin-white.svg) 50% no-repeat;
+}
+
+.offer__contact {
+    padding-bottom: 30px;
+}
+
+.contact__info {
+    padding: 60px 0;
+    border-radius: 60px 0 60px 0;
+    box-shadow: 5px 5px 20px rgb(196, 195, 195);
+    overflow: hidden;
+}
+
+.info__card {
+    float: left;
+    width: 33.333%;
+    border-right: 1px solid rgb(225, 224, 224);
+    text-align: center;
+}
+
+.info__card:last-child {
+    border: none;
+}
+
+.info__image {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #F16214;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.info__image img {
+    width: 15px;
+    height: 15px;
+    margin: 12.5px 0;
+}
+
+h5 {
+    font-weight: 700;
+    line-height: 30px;
+    color: #000;
+}
+
+.info__text {
+    line-height: 16px;
+    font-size: 13px;
+}
+
+/*-------------How to work--------------*/
+
+.howtowork {
+    overflow: hidden;
+    margin-top: -30px;
+}
+
+.howtowork__image {
+    width: 50%;
+    float: left;
+    position: relative;
+    margin: 0 10px 0 0;
+    height: 694px;
+}
+
+.howtowork__image img {
+    position: absolute;
+    top: -30px;
+    left: -240px;
+    overflow: hidden;
+}
+
+.howtowork__info {
+    padding: 128px 0 158px 0;
+    float: left;
+    position: relative;
+    height: 694px;
+    z-index: 2;
+}
+
+.menupoint {
+    color: #F16214;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.98px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.52px;
+}
+
+.howtowork__title {
+    margin-bottom: 45px;
+    max-width: 560px;
+}
+
+.howtowork__text {
+    margin-bottom: 25px;
+    max-width: 590px;
+}
+
+.howtowork__button {
+    margin-left: 5px;
+}
+
+/*-------------Services--------------*/
+
+.services__wrap {
+    padding: 70px 0 40px 0;
+    overflow: hidden;
+}
+
+.services__text {
+    text-align: center;
+    clear: both;
+}
+
+.services__title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.favorite__food {
+    margin: 0 -15px;
+}
+
+.foodcard {
+    float: left;
+    width: 370px;
+    margin: 0 15px 30px 15px;
+    text-align: center;
+    padding: 70px 30px;
+    height: 395px;
+    border: 1px solid #dcdada;
+    border-radius: 60px 0 60px 0;
+}
+
+.foodcard:hover {
+    box-shadow: 5px 5px 20px rgb(196, 195, 195);
+    border: none;
+}
+
+.foodcard__image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(241, 98, 20, 0.15);
+    margin-bottom: 45px;
+}
+
+.foodcard__image img {
+    margin: 25px 0;
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 31.54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.foodcard__text {
+    line-height: 25.6px;
+}
+
+/*-------------Product--------------*/
+
+.product__wrap {
+    padding: 100px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product__items {
+    overflow: hidden;
+    margin: 0 -15px;
+    padding: 60px 0 30px 0;
+}
+
+.itemCard {
+    float: left;
+    margin: 0 15px 30px 15px;
+    width: 370px;
+    height: 420px;
+    border-radius: 60px 0 60px 0;
+    box-shadow: 3px 3px 10px rgb(225, 224, 224);
+}
+
+.itemCard__info {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.itemCard__name {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.itemCard__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.26px;
+    margin-bottom: 20px;
+}
+.itemCard__button {
+    height: 40px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: #F16214;
+    color: #fff;
+    font-size: 11px;
+    line-height: 11px;
+}
+
+.itemCard__price {
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding: 15px 0 0 0;
+}
+
+.price__rating {
+    margin-bottom: 15px;
+}
+
+.rating__img {
+    width: 14px;
+    height: 14px;
+    margin: 3px 6px 0 0;
+}
+
+.rating__value {
+    font-size: 11px;
+    line-height: 14px;
+    display: inline-block;
+}
+
+.price {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000;
+}
+
+.product__button {
+    background: #F16214 url('../image/icon/arrow.svg') 97% 50% no-repeat;
+}
+/*возможно костыльно но я ничего более подходящего не придумала, потом спрошу;/
