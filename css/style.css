@@ -31,6 +31,13 @@ header {
     padding: 30px 0;
 }
 
+.container_other {
+    max-width: 1260px;
+    padding: 0 15px 30px 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .container {
     max-width: 1200px;
     padding: 0 15px;
@@ -38,7 +45,7 @@ header {
     overflow: hidden;
 }
 
-.container_other {
+.container_offer {
     max-width: 1200px;
     padding: 0 15px 30px 15px;
     margin: 0 auto;
@@ -52,6 +59,8 @@ header {
 
 .logo a {
     display: inline-block;
+    width: 162px;
+    height: 45px;
 }
 
 .header__navigation {
@@ -69,6 +78,7 @@ header {
 
 .header__menu li a {
     padding: 12px 15px;
+    color: #000;
 }
 
 .header__menu li a:hover {
@@ -298,7 +308,7 @@ h2 {
 /*-----------------------------Services-------------------------------*/
 
 .services__wrap {
-    padding: 100px 0 40px 0;
+    padding: 100px 0 20px 0;
 }
 
 .services__text {
@@ -307,19 +317,20 @@ h2 {
 }
 
 .services__title {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
 .favorite__food {
     margin: 0 -15px;
+    padding: 0 30px 20px;
     overflow: hidden;
 }
 
 .foodcard {
     float: left;
     width: 370px;
-    margin: 0 15px 30px 15px;
+    margin: 30px 15px;
     text-align: center;
     padding: 70px 30px;
     height: 395px;
@@ -328,7 +339,8 @@ h2 {
 }
 
 .foodcard:hover {
-    box-shadow: 0px 0px 20px rgb(196, 195, 195);
+    /* box-shadow: 0px 0px 20px rgb(196, 195, 195); */
+    box-shadow: 5px 15px 45px rgba(0, 0, 0, 0.1);
     border: none;
 }
 
@@ -546,7 +558,7 @@ h3 {
 
 .testimonials {
     text-align: center;
-    padding: 100px 0 80px 0;
+    padding: 90px 0 60px 0;
     background: url(../image/vegetable-food-diet.png) 0 30px no-repeat;
 }
 
